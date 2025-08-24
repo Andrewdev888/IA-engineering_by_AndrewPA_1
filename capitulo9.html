@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: El Ciclo de Aprendizaje Completo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #f0f2f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #92e0ff;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #f0f2f0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #92e0ff;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #92e0ff;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 1px solid #92e0ff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #92e0ff;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>El Ciclo de Aprendizaje Completo</h1>
+        <p>
+            Hemos explorado cada componente por separado, pero ahora es el momento de unir todas las piezas para entender cómo una red neuronal aprende de principio a fin. El proceso es un ciclo continuo de predicción, evaluación y ajuste.
+        </p>
+        <ul>
+            <li>
+                <h3>1. Propagación hacia Adelante (Forward Pass)</h3>
+                <p>
+                    La información se introduce en la red a través de la capa de entrada y viaja hacia adelante a través de las capas ocultas hasta llegar a la capa de salida, donde se genera una predicción.
+                </p>
+            </li>
+            <li>
+                <h3>2. Cálculo de la Pérdida (Loss)</h3>
+                <p>
+                    La predicción de la red se compara con la respuesta correcta (la verdad) para calcular el error. Esta "pérdida" le dice a la red qué tan lejos está de ser precisa.
+                </p>
+            </li>
+            <li>
+                <h3>3. Retropropagación (Backpropagation)</h3>
+                <p>
+                    El error se propaga hacia atrás, desde la capa de salida hasta la capa de entrada. Este algoritmo calcula la contribución de cada neurona al error total, informando a la red sobre qué pesos y sesgos necesitan ser ajustados.
+                </p>
+            </li>
+            <li>
+                <h3>4. Descenso de Gradiente (Gradient Descent)</h3>
+                <p>
+                    Finalmente, los pesos y sesgos de la red se ajustan en pequeños pasos para minimizar la pérdida. La red utiliza la información del gradiente para moverse en la dirección correcta, poco a poco, hasta que su predicción es lo más precisa posible.
+                </p>
+            </li>
+        </ul>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

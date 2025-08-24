@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Digital Interactivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #743caf, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+            text-align: center;
+        }
+        .cover-container {
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(162, 154, 209, 0.25);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cover-image {
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+        .author {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-bottom: 3em;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #2575fc;
+            background-color: #ffffff;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .start-button:hover {
+            transform: scale(1.05);
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <img src="Portada1.jpg" alt="Portada minimalista de una serpiente" class="cover-image">
+        <h1>Explorando las Redes Neuronales</h1>
+        <h2>Un Libro Digital Interactivo en 3D</h2>
+        <div class="author">
+            by Andrew P.A.
+        </div>
+        <a href="index.html" class="start-button">Comenzar a Leer</a>
+    </div>
+</body>
+</html>

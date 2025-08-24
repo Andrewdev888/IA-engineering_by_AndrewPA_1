@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8: Backpropagation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #f0f2f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #92e0ff;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #f0f2f0;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #92e0ff;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 1px solid #92e0ff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #92e0ff;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Backpropagation: El Algoritmo de Aprendizaje</h1>
+        <p>
+            En el Capítulo 7, exploramos cómo el **descenso de gradiente** le dice a la red en qué dirección moverse para corregir su error. Pero, ¿cómo sabe cada neurona cuánto contribuyó al error? Aquí es donde entra en juego el **Backpropagation**, o retropropagación.
+        </p>
+        <p>
+            El backpropagation es el algoritmo central que le permite a una red neuronal aprender. Su trabajo es propagar el error hacia atrás, desde la capa de salida hasta la capa de entrada, para calcular el gradiente de la pérdida con respecto a cada peso y sesgo de la red.
+        </p>
+        <p>
+            Imagina que una red neuronal es una cadena de dominós. Cuando el último dominó (la salida) cae mal, el backpropagation es la forma en que la red averigua exactamente cuánto y en qué dirección se debe ajustar cada dominó anterior para que el resultado final sea el correcto.
+        </p>
+        <p>
+            En esencia, el backpropagation es el método que hace posible el **descenso de gradiente**. Sin él, no sabríamos cómo ajustar los parámetros de la red de manera eficiente para reducir el error y mejorar su precisión.
+        </p>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

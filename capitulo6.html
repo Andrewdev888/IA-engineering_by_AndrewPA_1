@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 6: La Utilidad de las Funciones de Activación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #f0f2f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #92e0ff;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #f0f2f0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #92e0ff;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #92e0ff;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: 1px solid #92e0ff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #92e0ff;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sintesis: ¿Para qué sirve cada función de activación?</h1>
+        <p>
+            La elección de la función de activación es un aspecto crucial en el diseño de redes neuronales, ya que determina la capacidad de la red para aprender patrones complejos. Aquí un resumen de la utilidad de cada una:
+        </p>
+        <ul>
+            <li>
+                <h3>Sigmoide</h3>
+                <p>
+                    Fue la primera función popular. Su rango de salida de **0 a 1** la hace ideal para problemas de **clasificación binaria**, donde el resultado es "sí" o "no". Sin embargo, sufre del problema del **gradiente que se desvanece** lo que la hace lenta para redes profundas.
+                </p>
+            </li>
+            <li>
+                <h3>Tanh (Tangente Hiperbólica)</h3>
+                <p>
+                    Una alternativa a la sigmoide que centra su salida en cero, con un rango de **-1 a 1**. Este centrado ayuda a que el entrenamiento sea más estable. Aún así, también puede sufrir del problema del gradiente que se desvanece en ciertas condiciones.
+                </p>
+            </li>
+            <li>
+                <h3>ReLU (Unidad Lineal Rectificada)</h3>
+                <p>
+                    La función más usada en la actualidad. Su simplicidad ($$f(x) = \max(0, x)$$) la hace muy eficiente computacionalmente. Resuelve el problema del gradiente que se desvanece para valores positivos, acelerando significativamente el entrenamiento de redes profundas.
+                </p>
+            </li>
+        </ul>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
